@@ -26,6 +26,7 @@ Write-Host $_
 }
 
 try{
+Write-host "Removing local app data."
 Remove-Item 'C:\Users\User\AppData\Local\Google\Chrome\User Data' -Recurse -Force -ErrorAction Stop
 }
 catch{
